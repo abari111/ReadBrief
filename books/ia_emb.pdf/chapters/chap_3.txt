@@ -1,0 +1,12 @@
+Chapitre 3: Contraintes
+Systèmes embarqués sont des systèmes contraints en ressources mémoire, en puissance
+de calcul. D'ailleurs la programmation de ces systèmes exigent une connaissance de la
+plateforme matérielle pour une bonne utilisation des ces ressources. Les modèles d'IA sont
+volumineux et gourmand en puissance de calcul dont très energivores. Seuls les modèles
+optimisés correspondant aux contraintes des systèmes embarqués sont utilisés. Donc des
+techniques d'optimisation visant à reduire l'empreinte memoire des ces modèles et/ou
+assurant la bonne gestion de la communication entre RAM et la mémoire Flash, tout en
+gardant une précision satisfaisante, doivent être utilisée.
+Techniques d'optimisation
+Plusieurs techniques d'optimisation existent. Elles optimisent généralement l'empreinte
+memoire du modèle, la consommation énergétique, ou architecture des modèles d'IA.

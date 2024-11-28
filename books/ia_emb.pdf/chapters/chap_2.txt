@@ -1,0 +1,7 @@
+Chapitre 2: Applications
+- Voice assistant
+- Wild animal surveillance
+- Autonomous vehicles
+- Smart city
+- Speech recognition
+- Containers trackers

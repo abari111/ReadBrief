@@ -1,0 +1,11 @@
+Chapitre 4: Techniques de Compression du modèle existant
+- Quantification
+- Pruning
+- Knowledge distillation
+- Neural search
+- Mise en place de Modèles/Blocks respectant les contraints du système embarqué
+- Outils Soft-hard
+- Micro-controllers, Specialized hardware, Powerful embedded systems
+- TF lite, Edge impulse, KubeEdge
+- End-to-end Edge AI projects
+- Projets opensource

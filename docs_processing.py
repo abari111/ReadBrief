@@ -17,7 +17,7 @@ def pdf_to_text(file_path, out_dir):
         for i, page in enumerate(pdf.pages):
             text = page.extract_text()
 
-def extract_book_chapters(file_path, out_dir):
+def extract_book_chapters(file_path, out_dir, sep='Chapitre'):
     file_name = file_path.split("/")[-1]
     
     if not os.path.exists(out_dir):
@@ -25,7 +25,7 @@ def extract_book_chapters(file_path, out_dir):
     chaps = []
     chapter_text = ""
     chapter_number = 0
-    chapter_pattern = re.compile(r"^Chapitre\s+\d+", re.IGNORECASE)  # Motif pour détecter les chapitres
+    chapter_pattern = re.compile(fr"^{sep}\s+\d+", re.IGNORECASE)  # Motif pour détecter les chapitres
 
     with pdfplumber.open(file_path) as pdf:
         for i, page in enumerate(pdf.pages):

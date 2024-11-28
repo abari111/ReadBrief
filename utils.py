@@ -45,6 +45,18 @@ def generate_text(prompt:str, temperature:float=None) ->str:
                             messages=[{'role': 'user', 'content': prompt}], temperature=0)
     return response.choices[0].message.content
 
+import re
+
+
+def get_chap(filename, pattern=r"chap_(\d+)\.wav"):
+    match = re.search(pattern, filename)
+
+    if match:
+        number = match.group(1) 
+        return int(number)
+    else:
+        print("No match found")
+
 if __name__=="__main__":
     file_ext = check_file_ext("spinQuant")
     print(file_ext)
